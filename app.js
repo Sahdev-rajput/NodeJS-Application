@@ -33,7 +33,7 @@ app.post("/",function(req,res)
             merge_fields: {
                 FNAME: firstname,
                 LNAME: lastname,
-                BIRTHDAY: dob,
+                DATEOFBIR: dob,
                 CLASS: Class
             }
         }
