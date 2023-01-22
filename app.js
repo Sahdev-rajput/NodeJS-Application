@@ -20,9 +20,8 @@ app.post("/",function(req,res)
     const email=req.body.mail;
     const firstname=req.body.fname;
     const lastname=req.body.lname;
-    const contactnumber=req.body.contact;
+    const dob=req.body.DOB;
     const Class=req.body.class;
-    const Addres=req.body.Address;
     //console.log(firstname+" "+lastname+" "+contactnumber+" "+Class+" "+"Address")
 
 
@@ -34,8 +33,7 @@ app.post("/",function(req,res)
             merge_fields: {
                 FNAME: firstname,
                 LNAME: lastname,
-                VILLAGE: Addres,
-                PHONE: contactnumber,
+                BIRTHDAY: dob,
                 CLASS: Class
             }
         }
